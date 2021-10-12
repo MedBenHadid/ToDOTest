@@ -27,13 +27,12 @@ export const Category = (id) => async (dispatch) => {
     try {
         dispatch({ type: CategoryConstants.Category_FETCH_START });
 
-        await axios.get(`http://localhost:5000/api/product/${id}`).then((res) => {
-            const product = res.data.data;
-            const recommended = res.data.recommended.recomms
-            // console.log(recommended)
+        await axios.get(`http://localhost:5000/api/category/${id}`).then((res) => {
+            const category = res.data;
+            
             dispatch({
                 type: CategoryConstants.Category_FETCH_SUCCESS,
-                payload: { product, recommended }
+                payload: category
             });
         });
     } catch (error) {
