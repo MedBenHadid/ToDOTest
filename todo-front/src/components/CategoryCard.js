@@ -44,12 +44,10 @@ const CategoryCard = ({ category, index }) => {
         dispatch(ToDoListAction.createTodoList(data))
     }
     const DeleteTaskList = (id) => {
-        // setShowAddTaskList(false)
 
         dispatch(ToDoListAction.deleteTodoList(id))
     }
     const DeleteCategory = (id) => {
-        // setShowAddTaskList(false)
 
         dispatch(CategoryAction.deleteCategory(id))
         dispatch(CategoryAction.listCategorys(true));
