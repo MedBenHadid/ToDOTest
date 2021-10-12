@@ -1,4 +1,9 @@
 # ToDOTest
+TECH: 
+☆ Reactjs
+☆ Redux
+☆ Nodejs
+☆ MySql
 The basic functions that are required are:<br />
 ✔Adding a task (with title, description, priority level (1 to 5) and date of completion) <br />
 ✔Editing a task<br />
