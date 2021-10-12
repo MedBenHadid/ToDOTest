@@ -107,7 +107,7 @@ export const editCategory = (id, UpdatedData) => async (dispatch, getState) => {
             },
         };
         await axios
-            .put(`http://localhost:5000/api/product/${id}`, UpdatedData, config)
+            .put(`http://localhost:5000/api/category/${id}`, UpdatedData, config)
             .then((resp) => {
                 const response = resp.data
                 dispatch({
