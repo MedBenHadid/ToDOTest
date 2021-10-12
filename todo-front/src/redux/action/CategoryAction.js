@@ -4,9 +4,6 @@ import * as CategoryConstants from "../constants/Category";
 export const listCategorys = (initialLoading) => async (dispatch) => {
 
     try {
-        // if(initialLoading){
-        // dispatch({type : CategoryConstants.Categorys_FETCH_START});
-        // }
 
         await axios.get(`http://localhost:5000/api/category/`)
             .then((res) => {
